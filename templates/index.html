@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+<div class="mdui-container mt-4">
+    <div class="mdui-row">
+      <div class="mdui-col-md-12">
+        <div class="mdui-card">
+          <div class="mdui-card-header">
+            <img class="mdui-card-header-avatar" src="{{ url_for('static', filename='reference/童老师.JPG') }}"/>
+            <div class="mdui-card-header-title">TONG</div>
+            <div class="mdui-card-header-subtitle">校长</div>
+          </div>
+          <div class="mdui-card-media">
+            <img src="https://cdn.w3cbus.com/mdui/docs~1/static/1ca4b7b2b4b2f2352aeb.jpg"/>
+            <div class="mdui-card-menu">
+              <button class="mdui-btn mdui-btn-icon mdui-text-color-white"><i class="mdui-icon material-icons">share</i></button>
+            </div>
+          </div>
+          <div class="mdui-card-primary">
+            <div class="mdui-card-primary-title">金融数据分析系统</div>
+            <div class="mdui-card-primary-subtitle">Financial Analysis</div>
+          </div>
+          <div class="mdui-chip">
+      <span class="mdui-chip-icon mdui-color-blue"><i class="mdui-icon material-icons">face</i></span>
+      <span class="mdui-chip-title">子曰：</span>
+    </div>
+          <div class="mdui-card-content">「创业板不来20CM，不亦说乎？龙头战法而不为人知，而不愠，不亦君子乎？」
+          </div>
+
+          <!-- File upload form -->
+          <div class="mdui-card-content">
+            <form method="post" enctype="multipart/form-data" >
+                <div class="mdui-textfield mdui-textfield-floating-label">
+                    <input type="file" id="docxFile" name="docxFile" class="mdui-textfield-input" required>
+                </div>
+                <button type="submit" class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent">提交</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+</div>
+{% endblock %}
